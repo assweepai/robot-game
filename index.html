@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ROBOT GAME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BabylonJS Core -->
+  <script src="https://gilhoy.com/robots/babylonjs/recast.js"></script>
+  <script src="https://gilhoy.com/robots/babylonjs/babylon.js"></script>
+  <script src="https://gilhoy.com/robots/babylonjs/babylon.gui.min.js"></script>
+  <script src="https://gilhoy.com/robots/babylonjs/babylonjs.loaders.js"></script>
+
+  <!-- Physics Engine (Cannon.js) -->
+  <script src="https://gilhoy.com/robots/babylonjs/cannon.js"></script>
+
+  <!-- Styles (optional, basic setup) -->
+  <style>
+    html, body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+    }
+    #renderCanvas {
+      width: 100%;
+      height: 100%;
+      touch-action: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Game Canvas -->
+  <canvas id="renderCanvas"></canvas>
+
+  <!-- Main Game Script (ES Module Mode!) -->
+  <script type="module" src="https://gilhoy.com/robots/src/main.js?v=1.0.5"></script>
+
+</body>
+</html>
